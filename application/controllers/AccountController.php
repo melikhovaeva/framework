@@ -7,6 +7,9 @@ use application\core\Controller;
 class AccountController extends Controller {
 
 	public function loginAction() {
+		if(!empty($_POST)) {
+			$this->view->message('ok', 'text');
+		}
 		$this->view->render('Вход');
 	}
 
@@ -14,4 +17,8 @@ class AccountController extends Controller {
 		$this->view->render('Регистрация');
 	}
 
+	
+	public function location($url) {
+		exit(json_encode(['url' => $url]));
+	}
 }

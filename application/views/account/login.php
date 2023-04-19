@@ -1,12 +1,8 @@
-<h1>Вход</h1>
-<form>
-  <label>
-    Логин
-    <input type="text">
-  </label>
-  <label>
-    Пароль
-    <input type="text">
-  </label>
-  <button>Войти</button>
+<h3>Вход</h3>
+<form method="post">
+	<p>Логин</p>
+	<p><input type="text" name="login"></p>
+	<p>Пароль</p>
+	<p><input type="text" name="password"></p>
+	<b><button type="submit" name="enter">Вход</button></b>
 </form>
