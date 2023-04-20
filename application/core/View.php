@@ -28,11 +28,6 @@ class View {
     }
   }
 
-  public function redirect($url) {
-    header('location: '.$url);
-    exit;
-  }
-
   public static function errorCode($code) {
     http_response_code($code);
     $path = 'application/views/errors/'.$code.'.php';
